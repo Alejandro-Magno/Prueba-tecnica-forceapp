@@ -126,7 +126,7 @@ function DetailViewMov({ USER, FILMS, getPersonajes, CHARACTERS }) {
 
   return (
     <>
-    <Header />
+      <Header />
       {FILMS.length > 0 ? (
         <DetailView>
           <div className="container">
@@ -143,7 +143,17 @@ function DetailViewMov({ USER, FILMS, getPersonajes, CHARACTERS }) {
             </div>
 
             <div className="Table--container">
-              <h2>Personajes</h2>
+              <div className="table-header">
+                <h2>Personajes</h2>
+                <h2
+                  onClick={() => {
+                    navigate("/listaView");
+                  }}
+                >
+                  {" "}
+                  Atras{" "}
+                </h2>
+              </div>
               <Movies />
             </div>
 

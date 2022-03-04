@@ -174,11 +174,30 @@ export const DetailView = styled.div`
 
     p {
       letter-spacing: 3px;
-      text-size-adjust:100%;
+      text-size-adjust: 100%;
     }
   }
 
   .Table--container {
+    .table-header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      h2:nth-child(2){
+        cursor: pointer;
+        color: #ffffff;
+
+        padding: 3px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border: 1px solid white;
+
+        font-size:calc(1em+1vw)
+        
+      }
+     
+    }
     width: 60vw;
     h2 {
       color: #ddd;
@@ -266,8 +285,6 @@ export const DetailView = styled.div`
 
   footer {
     width: 60vw;
-
-  
   }
 `;
 
